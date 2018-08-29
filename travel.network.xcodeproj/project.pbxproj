@@ -7,14 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		008E0DF30B531BB42E400FFB /* libPods-travel.networkUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 73F1E1997371EB16D43A8FBB /* libPods-travel.networkUITests.a */; };
+		1CB2EE605DB8AAD5D5E98A0E /* libPods-travel.networkTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9F31B527BE879E0702E44C /* libPods-travel.networkTests.a */; };
+		3E26AD3821363913001D7FE5 /* TNWLoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E26AD3721363913001D7FE5 /* TNWLoginModel.m */; };
+		3E26AD3B21363961001D7FE5 /* TNWLoginHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E26AD3A21363961001D7FE5 /* TNWLoginHelper.m */; };
+		3E26AD3E21363C82001D7FE5 /* TNWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E26AD3D21363C82001D7FE5 /* TNWViewController.m */; };
+		3E26AD412136455B001D7FE5 /* TNWBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E26AD402136455B001D7FE5 /* TNWBaseViewController.m */; };
+		3E26AD44213646B1001D7FE5 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E26AD43213646B1001D7FE5 /* BaseTableViewController.m */; };
+		3E26AD472136475D001D7FE5 /* BasecollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E26AD462136475D001D7FE5 /* BasecollectionViewController.m */; };
+		3E26AD4D2136483D001D7FE5 /* TNWWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E26AD4C2136483D001D7FE5 /* TNWWebViewController.m */; };
+		3E26AD5021364901001D7FE5 /* TNWNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E26AD4F21364901001D7FE5 /* TNWNavigationController.m */; };
+		3E26AD5921364A6B001D7FE5 /* JANetworkErrorParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E26AD5321364A6B001D7FE5 /* JANetworkErrorParser.m */; };
+		3E26AD5A21364A6B001D7FE5 /* JANetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E26AD5521364A6B001D7FE5 /* JANetworkManager.m */; };
+		3E26AD5B21364A6B001D7FE5 /* JANetworkRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E26AD5621364A6B001D7FE5 /* JANetworkRequest.m */; };
+		3E26AD5E21364A85001D7FE5 /* JADataParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E26AD5C21364A84001D7FE5 /* JADataParser.m */; };
+		3E26AD6121364CEF001D7FE5 /* JANetWorkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E26AD6021364CEE001D7FE5 /* JANetWorkTool.m */; };
 		3E9264D3213399D100DCFF00 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E9264D2213399D100DCFF00 /* AppDelegate.m */; };
-		3E9264D6213399D100DCFF00 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E9264D5213399D100DCFF00 /* ViewController.m */; };
-		3E9264D9213399D100DCFF00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E9264D7213399D100DCFF00 /* Main.storyboard */; };
 		3E9264DB213399D500DCFF00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E9264DA213399D500DCFF00 /* Assets.xcassets */; };
 		3E9264DE213399D500DCFF00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E9264DC213399D500DCFF00 /* LaunchScreen.storyboard */; };
 		3E9264E1213399D500DCFF00 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E9264E0213399D500DCFF00 /* main.m */; };
 		3E9264EB213399D500DCFF00 /* travel_networkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E9264EA213399D500DCFF00 /* travel_networkTests.m */; };
 		3E9264F6213399D500DCFF00 /* travel_networkUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E9264F5213399D500DCFF00 /* travel_networkUITests.m */; };
+		3EBA100821353D9100CEC004 /* AppDelegate+AppService.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EBA100721353D9100CEC004 /* AppDelegate+AppService.m */; };
+		3EBA10122135486300CEC004 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EBA10112135486300CEC004 /* BaseModel.m */; };
+		3EBA101521354B7B00CEC004 /* ErrorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EBA101421354B7B00CEC004 /* ErrorModel.m */; };
+		3EBA101821354CD300CEC004 /* TNWTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EBA101721354CD300CEC004 /* TNWTabBar.m */; };
+		D3009374B15E452A45AA0EE6 /* libPods-travel.network.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 392B0E51AB5846B12CDB2CD5 /* libPods-travel.network.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,12 +53,37 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		28F34FFE7C760CCBC8CC1F24 /* Pods-travel.networkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-travel.networkTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-travel.networkTests/Pods-travel.networkTests.debug.xcconfig"; sourceTree = "<group>"; };
+		392B0E51AB5846B12CDB2CD5 /* libPods-travel.network.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-travel.network.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E26AD3621363913001D7FE5 /* TNWLoginModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TNWLoginModel.h; sourceTree = "<group>"; };
+		3E26AD3721363913001D7FE5 /* TNWLoginModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TNWLoginModel.m; sourceTree = "<group>"; };
+		3E26AD3921363961001D7FE5 /* TNWLoginHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TNWLoginHelper.h; sourceTree = "<group>"; };
+		3E26AD3A21363961001D7FE5 /* TNWLoginHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TNWLoginHelper.m; sourceTree = "<group>"; };
+		3E26AD3C21363C82001D7FE5 /* TNWViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TNWViewController.h; sourceTree = "<group>"; };
+		3E26AD3D21363C82001D7FE5 /* TNWViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TNWViewController.m; sourceTree = "<group>"; };
+		3E26AD3F2136455B001D7FE5 /* TNWBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TNWBaseViewController.h; sourceTree = "<group>"; };
+		3E26AD402136455B001D7FE5 /* TNWBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TNWBaseViewController.m; sourceTree = "<group>"; };
+		3E26AD42213646B1001D7FE5 /* BaseTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTableViewController.h; sourceTree = "<group>"; };
+		3E26AD43213646B1001D7FE5 /* BaseTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
+		3E26AD452136475D001D7FE5 /* BasecollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BasecollectionViewController.h; sourceTree = "<group>"; };
+		3E26AD462136475D001D7FE5 /* BasecollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BasecollectionViewController.m; sourceTree = "<group>"; };
+		3E26AD4B2136483D001D7FE5 /* TNWWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TNWWebViewController.h; sourceTree = "<group>"; };
+		3E26AD4C2136483D001D7FE5 /* TNWWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TNWWebViewController.m; sourceTree = "<group>"; };
+		3E26AD4E21364901001D7FE5 /* TNWNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TNWNavigationController.h; sourceTree = "<group>"; };
+		3E26AD4F21364901001D7FE5 /* TNWNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TNWNavigationController.m; sourceTree = "<group>"; };
+		3E26AD5321364A6B001D7FE5 /* JANetworkErrorParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JANetworkErrorParser.m; sourceTree = "<group>"; };
+		3E26AD5421364A6B001D7FE5 /* JANetworkRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JANetworkRequest.h; sourceTree = "<group>"; };
+		3E26AD5521364A6B001D7FE5 /* JANetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JANetworkManager.m; sourceTree = "<group>"; };
+		3E26AD5621364A6B001D7FE5 /* JANetworkRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JANetworkRequest.m; sourceTree = "<group>"; };
+		3E26AD5721364A6B001D7FE5 /* JANetworkErrorParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JANetworkErrorParser.h; sourceTree = "<group>"; };
+		3E26AD5821364A6B001D7FE5 /* JANetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JANetworkManager.h; sourceTree = "<group>"; };
+		3E26AD5C21364A84001D7FE5 /* JADataParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JADataParser.m; sourceTree = "<group>"; };
+		3E26AD5D21364A85001D7FE5 /* JADataParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JADataParser.h; sourceTree = "<group>"; };
+		3E26AD5F21364CEE001D7FE5 /* JANetWorkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JANetWorkTool.h; sourceTree = "<group>"; };
+		3E26AD6021364CEE001D7FE5 /* JANetWorkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JANetWorkTool.m; sourceTree = "<group>"; };
 		3E9264CE213399D100DCFF00 /* travel.network.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = travel.network.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E9264D1213399D100DCFF00 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3E9264D2213399D100DCFF00 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		3E9264D4213399D100DCFF00 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		3E9264D5213399D100DCFF00 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		3E9264D8213399D100DCFF00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3E9264DA213399D500DCFF00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E9264DD213399D500DCFF00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3E9264DF213399D500DCFF00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +94,29 @@
 		3E9264F1213399D500DCFF00 /* travel.networkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = travel.networkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E9264F5213399D500DCFF00 /* travel_networkUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = travel_networkUITests.m; sourceTree = "<group>"; };
 		3E9264F7213399D500DCFF00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EBA0FFA21352A3800CEC004 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		3EBA0FFB21352C7A00CEC004 /* ACMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ACMacros.h; sourceTree = "<group>"; };
+		3EBA0FFC21352CD300CEC004 /* APIMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIMacro.h; sourceTree = "<group>"; };
+		3EBA0FFD21352D1000CEC004 /* AppMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppMacro.h; sourceTree = "<group>"; };
+		3EBA0FFE21352D2300CEC004 /* NotifacationMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotifacationMacro.h; sourceTree = "<group>"; };
+		3EBA100021352D5500CEC004 /* ToolView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolView.h; sourceTree = "<group>"; };
+		3EBA100121352D6700CEC004 /* UtilsMarco.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UtilsMarco.h; sourceTree = "<group>"; };
+		3EBA100221352D7B00CEC004 /* VendorMarco.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VendorMarco.h; sourceTree = "<group>"; };
+		3EBA100621353D9100CEC004 /* AppDelegate+AppService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+AppService.h"; sourceTree = "<group>"; };
+		3EBA100721353D9100CEC004 /* AppDelegate+AppService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+AppService.m"; sourceTree = "<group>"; };
+		3EBA10102135486300CEC004 /* BaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		3EBA10112135486300CEC004 /* BaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		3EBA101321354B7B00CEC004 /* ErrorModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ErrorModel.h; sourceTree = "<group>"; };
+		3EBA101421354B7B00CEC004 /* ErrorModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ErrorModel.m; sourceTree = "<group>"; };
+		3EBA101621354CD300CEC004 /* TNWTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TNWTabBar.h; sourceTree = "<group>"; };
+		3EBA101721354CD300CEC004 /* TNWTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TNWTabBar.m; sourceTree = "<group>"; };
+		4C4A2E9896F63B3B92A7FFEA /* Pods-travel.networkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-travel.networkUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-travel.networkUITests/Pods-travel.networkUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5E9F31B527BE879E0702E44C /* libPods-travel.networkTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-travel.networkTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E3310298A3A93CABB635E65 /* Pods-travel.networkUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-travel.networkUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-travel.networkUITests/Pods-travel.networkUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		73F1E1997371EB16D43A8FBB /* libPods-travel.networkUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-travel.networkUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		90FA41C4395F14C51AF4ECCA /* Pods-travel.networkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-travel.networkTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-travel.networkTests/Pods-travel.networkTests.release.xcconfig"; sourceTree = "<group>"; };
+		D8B14186282491CE29624F8D /* Pods-travel.network.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-travel.network.release.xcconfig"; path = "Pods/Target Support Files/Pods-travel.network/Pods-travel.network.release.xcconfig"; sourceTree = "<group>"; };
+		F59D7227706C53980C1D2B00 /* Pods-travel.network.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-travel.network.debug.xcconfig"; path = "Pods/Target Support Files/Pods-travel.network/Pods-travel.network.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3009374B15E452A45AA0EE6 /* libPods-travel.network.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +132,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CB2EE605DB8AAD5D5E98A0E /* libPods-travel.networkTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +140,106 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				008E0DF30B531BB42E400FFB /* libPods-travel.networkUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16A7F94517BEFAF7EE12C861 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				392B0E51AB5846B12CDB2CD5 /* libPods-travel.network.a */,
+				5E9F31B527BE879E0702E44C /* libPods-travel.networkTests.a */,
+				73F1E1997371EB16D43A8FBB /* libPods-travel.networkUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3E26AD2F21363880001D7FE5 /* Login(登录) */ = {
+			isa = PBXGroup;
+			children = (
+				3E26AD35213638E6001D7FE5 /* ViewModel */,
+				3E26AD34213638DC001D7FE5 /* Protocol */,
+				3E26AD33213638D3001D7FE5 /* Controller */,
+				3E26AD32213638CB001D7FE5 /* Manager */,
+				3E26AD31213638C5001D7FE5 /* Model */,
+				3E26AD30213638B8001D7FE5 /* View */,
+			);
+			path = "Login(登录)";
+			sourceTree = "<group>";
+		};
+		3E26AD30213638B8001D7FE5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3E26AD31213638C5001D7FE5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3E26AD3621363913001D7FE5 /* TNWLoginModel.h */,
+				3E26AD3721363913001D7FE5 /* TNWLoginModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3E26AD32213638CB001D7FE5 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				3E26AD3921363961001D7FE5 /* TNWLoginHelper.h */,
+				3E26AD3A21363961001D7FE5 /* TNWLoginHelper.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		3E26AD33213638D3001D7FE5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3E26AD34213638DC001D7FE5 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		3E26AD35213638E6001D7FE5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3E26AD5121364A2B001D7FE5 /* DataParser */ = {
+			isa = PBXGroup;
+			children = (
+				3E26AD5D21364A85001D7FE5 /* JADataParser.h */,
+				3E26AD5C21364A84001D7FE5 /* JADataParser.m */,
+			);
+			path = DataParser;
+			sourceTree = "<group>";
+		};
+		3E26AD5221364A35001D7FE5 /* NetWorkRequest */ = {
+			isa = PBXGroup;
+			children = (
+				3E26AD5F21364CEE001D7FE5 /* JANetWorkTool.h */,
+				3E26AD6021364CEE001D7FE5 /* JANetWorkTool.m */,
+				3E26AD5721364A6B001D7FE5 /* JANetworkErrorParser.h */,
+				3E26AD5321364A6B001D7FE5 /* JANetworkErrorParser.m */,
+				3E26AD5821364A6B001D7FE5 /* JANetworkManager.h */,
+				3E26AD5521364A6B001D7FE5 /* JANetworkManager.m */,
+				3E26AD5421364A6B001D7FE5 /* JANetworkRequest.h */,
+				3E26AD5621364A6B001D7FE5 /* JANetworkRequest.m */,
+			);
+			path = NetWorkRequest;
+			sourceTree = "<group>";
+		};
 		3E9264C5213399D000DCFF00 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +247,8 @@
 				3E9264E9213399D500DCFF00 /* travel.networkTests */,
 				3E9264F4213399D500DCFF00 /* travel.networkUITests */,
 				3E9264CF213399D100DCFF00 /* Products */,
+				F687BC6D3587A3F985230010 /* Pods */,
+				16A7F94517BEFAF7EE12C861 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,15 +265,16 @@
 		3E9264D0213399D100DCFF00 /* travel.network */ = {
 			isa = PBXGroup;
 			children = (
-				3E9264D1213399D100DCFF00 /* AppDelegate.h */,
-				3E9264D2213399D100DCFF00 /* AppDelegate.m */,
-				3E9264D4213399D100DCFF00 /* ViewController.h */,
-				3E9264D5213399D100DCFF00 /* ViewController.m */,
-				3E9264D7213399D100DCFF00 /* Main.storyboard */,
-				3E9264DA213399D500DCFF00 /* Assets.xcassets */,
-				3E9264DC213399D500DCFF00 /* LaunchScreen.storyboard */,
-				3E9264DF213399D500DCFF00 /* Info.plist */,
-				3E9264E0213399D500DCFF00 /* main.m */,
+				3EBA0FED2135239A00CEC004 /* AppDelegate */,
+				3EBA0FF12135244A00CEC004 /* Base */,
+				3EBA0FF22135245A00CEC004 /* Manager */,
+				3EBA0FF32135246500CEC004 /* Modules */,
+				3EBA0FF42135247300CEC004 /* Network */,
+				3EBA0FF52135247F00CEC004 /* Utils */,
+				3EBA0FF62135248B00CEC004 /* Vendors */,
+				3EBA0FF7213524A800CEC004 /* Macros */,
+				3EBA0FF8213524BA00CEC004 /* Resource */,
+				3EBA0FF92135287900CEC004 /* other */,
 			);
 			path = travel.network;
 			sourceTree = "<group>";
@@ -132,6 +297,182 @@
 			path = travel.networkUITests;
 			sourceTree = "<group>";
 		};
+		3EBA0FED2135239A00CEC004 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				3E9264D1213399D100DCFF00 /* AppDelegate.h */,
+				3E9264D2213399D100DCFF00 /* AppDelegate.m */,
+				3EBA100621353D9100CEC004 /* AppDelegate+AppService.h */,
+				3EBA100721353D9100CEC004 /* AppDelegate+AppService.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		3EBA0FF12135244A00CEC004 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				3EBA10092135477500CEC004 /* TabBarController */,
+				3EBA100F2135482C00CEC004 /* NavigationController */,
+				3EBA100E2135481400CEC004 /* BaseViewController */,
+				3EBA100D213547FC00CEC004 /* BaseTableViewcontroller */,
+				3EBA100C213547AD00CEC004 /* BaseCollectionViewController */,
+				3EBA100B2135479800CEC004 /* BaseWebViewController */,
+				3EBA100A2135478600CEC004 /* BaseModel */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		3EBA0FF22135245A00CEC004 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		3EBA0FF32135246500CEC004 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				3E26AD2F21363880001D7FE5 /* Login(登录) */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		3EBA0FF42135247300CEC004 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				3E26AD5221364A35001D7FE5 /* NetWorkRequest */,
+				3E26AD5121364A2B001D7FE5 /* DataParser */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		3EBA0FF52135247F00CEC004 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		3EBA0FF62135248B00CEC004 /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
+		3EBA0FF7213524A800CEC004 /* Macros */ = {
+			isa = PBXGroup;
+			children = (
+				3EBA0FFB21352C7A00CEC004 /* ACMacros.h */,
+				3EBA0FFC21352CD300CEC004 /* APIMacro.h */,
+				3EBA0FFD21352D1000CEC004 /* AppMacro.h */,
+				3EBA0FFE21352D2300CEC004 /* NotifacationMacro.h */,
+				3EBA100021352D5500CEC004 /* ToolView.h */,
+				3EBA100121352D6700CEC004 /* UtilsMarco.h */,
+				3EBA100221352D7B00CEC004 /* VendorMarco.h */,
+			);
+			path = Macros;
+			sourceTree = "<group>";
+		};
+		3EBA0FF8213524BA00CEC004 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				3E9264DA213399D500DCFF00 /* Assets.xcassets */,
+				3E9264DC213399D500DCFF00 /* LaunchScreen.storyboard */,
+				3E9264DF213399D500DCFF00 /* Info.plist */,
+				3E9264E0213399D500DCFF00 /* main.m */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		3EBA0FF92135287900CEC004 /* other */ = {
+			isa = PBXGroup;
+			children = (
+				3EBA0FFA21352A3800CEC004 /* PrefixHeader.pch */,
+			);
+			path = other;
+			sourceTree = "<group>";
+		};
+		3EBA10092135477500CEC004 /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				3EBA101621354CD300CEC004 /* TNWTabBar.h */,
+				3EBA101721354CD300CEC004 /* TNWTabBar.m */,
+				3E26AD3C21363C82001D7FE5 /* TNWViewController.h */,
+				3E26AD3D21363C82001D7FE5 /* TNWViewController.m */,
+			);
+			path = TabBarController;
+			sourceTree = "<group>";
+		};
+		3EBA100A2135478600CEC004 /* BaseModel */ = {
+			isa = PBXGroup;
+			children = (
+				3EBA10102135486300CEC004 /* BaseModel.h */,
+				3EBA10112135486300CEC004 /* BaseModel.m */,
+				3EBA101321354B7B00CEC004 /* ErrorModel.h */,
+				3EBA101421354B7B00CEC004 /* ErrorModel.m */,
+			);
+			path = BaseModel;
+			sourceTree = "<group>";
+		};
+		3EBA100B2135479800CEC004 /* BaseWebViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3E26AD4B2136483D001D7FE5 /* TNWWebViewController.h */,
+				3E26AD4C2136483D001D7FE5 /* TNWWebViewController.m */,
+			);
+			path = BaseWebViewController;
+			sourceTree = "<group>";
+		};
+		3EBA100C213547AD00CEC004 /* BaseCollectionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3E26AD452136475D001D7FE5 /* BasecollectionViewController.h */,
+				3E26AD462136475D001D7FE5 /* BasecollectionViewController.m */,
+			);
+			path = BaseCollectionViewController;
+			sourceTree = "<group>";
+		};
+		3EBA100D213547FC00CEC004 /* BaseTableViewcontroller */ = {
+			isa = PBXGroup;
+			children = (
+				3E26AD42213646B1001D7FE5 /* BaseTableViewController.h */,
+				3E26AD43213646B1001D7FE5 /* BaseTableViewController.m */,
+			);
+			path = BaseTableViewcontroller;
+			sourceTree = "<group>";
+		};
+		3EBA100E2135481400CEC004 /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3E26AD3F2136455B001D7FE5 /* TNWBaseViewController.h */,
+				3E26AD402136455B001D7FE5 /* TNWBaseViewController.m */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		3EBA100F2135482C00CEC004 /* NavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				3E26AD4E21364901001D7FE5 /* TNWNavigationController.h */,
+				3E26AD4F21364901001D7FE5 /* TNWNavigationController.m */,
+			);
+			path = NavigationController;
+			sourceTree = "<group>";
+		};
+		F687BC6D3587A3F985230010 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F59D7227706C53980C1D2B00 /* Pods-travel.network.debug.xcconfig */,
+				D8B14186282491CE29624F8D /* Pods-travel.network.release.xcconfig */,
+				28F34FFE7C760CCBC8CC1F24 /* Pods-travel.networkTests.debug.xcconfig */,
+				90FA41C4395F14C51AF4ECCA /* Pods-travel.networkTests.release.xcconfig */,
+				6E3310298A3A93CABB635E65 /* Pods-travel.networkUITests.debug.xcconfig */,
+				4C4A2E9896F63B3B92A7FFEA /* Pods-travel.networkUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,6 +480,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3E9264FA213399D500DCFF00 /* Build configuration list for PBXNativeTarget "travel.network" */;
 			buildPhases = (
+				D65AAF68482CE87E874E8234 /* [CP] Check Pods Manifest.lock */,
 				3E9264CA213399D000DCFF00 /* Sources */,
 				3E9264CB213399D000DCFF00 /* Frameworks */,
 				3E9264CC213399D000DCFF00 /* Resources */,
@@ -156,6 +498,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3E9264FD213399D500DCFF00 /* Build configuration list for PBXNativeTarget "travel.networkTests" */;
 			buildPhases = (
+				1221AF40595341A98591C1C2 /* [CP] Check Pods Manifest.lock */,
 				3E9264E2213399D500DCFF00 /* Sources */,
 				3E9264E3213399D500DCFF00 /* Frameworks */,
 				3E9264E4213399D500DCFF00 /* Resources */,
@@ -174,6 +517,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3E926500213399D500DCFF00 /* Build configuration list for PBXNativeTarget "travel.networkUITests" */;
 			buildPhases = (
+				386108F50E8C27C949DCDCB7 /* [CP] Check Pods Manifest.lock */,
 				3E9264ED213399D500DCFF00 /* Sources */,
 				3E9264EE213399D500DCFF00 /* Frameworks */,
 				3E9264EF213399D500DCFF00 /* Resources */,
@@ -237,7 +581,6 @@
 			files = (
 				3E9264DE213399D500DCFF00 /* LaunchScreen.storyboard in Resources */,
 				3E9264DB213399D500DCFF00 /* Assets.xcassets in Resources */,
-				3E9264D9213399D100DCFF00 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,14 +600,87 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1221AF40595341A98591C1C2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-travel.networkTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		386108F50E8C27C949DCDCB7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-travel.networkUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D65AAF68482CE87E874E8234 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-travel.network-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3E9264CA213399D000DCFF00 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E9264D6213399D100DCFF00 /* ViewController.m in Sources */,
+				3E26AD5921364A6B001D7FE5 /* JANetworkErrorParser.m in Sources */,
+				3E26AD5E21364A85001D7FE5 /* JADataParser.m in Sources */,
+				3EBA100821353D9100CEC004 /* AppDelegate+AppService.m in Sources */,
+				3E26AD5B21364A6B001D7FE5 /* JANetworkRequest.m in Sources */,
 				3E9264E1213399D500DCFF00 /* main.m in Sources */,
+				3EBA10122135486300CEC004 /* BaseModel.m in Sources */,
+				3E26AD472136475D001D7FE5 /* BasecollectionViewController.m in Sources */,
+				3E26AD412136455B001D7FE5 /* TNWBaseViewController.m in Sources */,
+				3E26AD3821363913001D7FE5 /* TNWLoginModel.m in Sources */,
 				3E9264D3213399D100DCFF00 /* AppDelegate.m in Sources */,
+				3E26AD44213646B1001D7FE5 /* BaseTableViewController.m in Sources */,
+				3E26AD3E21363C82001D7FE5 /* TNWViewController.m in Sources */,
+				3E26AD3B21363961001D7FE5 /* TNWLoginHelper.m in Sources */,
+				3EBA101521354B7B00CEC004 /* ErrorModel.m in Sources */,
+				3E26AD6121364CEF001D7FE5 /* JANetWorkTool.m in Sources */,
+				3E26AD5021364901001D7FE5 /* TNWNavigationController.m in Sources */,
+				3E26AD5A21364A6B001D7FE5 /* JANetworkManager.m in Sources */,
+				3E26AD4D2136483D001D7FE5 /* TNWWebViewController.m in Sources */,
+				3EBA101821354CD300CEC004 /* TNWTabBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,14 +716,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		3E9264D7213399D100DCFF00 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3E9264D8213399D100DCFF00 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3E9264DC213399D500DCFF00 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -431,11 +839,14 @@
 		};
 		3E9264FB213399D500DCFF00 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F59D7227706C53980C1D2B00 /* Pods-travel.network.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D6QLX2WKT5;
-				INFOPLIST_FILE = travel.network/Info.plist;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/design-mac1/Desktop/travel.network/travel.network/other/PrefixHeader.pch";
+				INFOPLIST_FILE = "/Users/design-mac1/Desktop/travel.network/travel.network/Resource/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -448,11 +859,14 @@
 		};
 		3E9264FC213399D500DCFF00 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8B14186282491CE29624F8D /* Pods-travel.network.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D6QLX2WKT5;
-				INFOPLIST_FILE = travel.network/Info.plist;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/design-mac1/Desktop/travel.network/travel.network/other/PrefixHeader.pch";
+				INFOPLIST_FILE = "/Users/design-mac1/Desktop/travel.network/travel.network/Resource/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -465,6 +879,7 @@
 		};
 		3E9264FE213399D500DCFF00 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28F34FFE7C760CCBC8CC1F24 /* Pods-travel.networkTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -484,6 +899,7 @@
 		};
 		3E9264FF213399D500DCFF00 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90FA41C4395F14C51AF4ECCA /* Pods-travel.networkTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -503,6 +919,7 @@
 		};
 		3E926501213399D500DCFF00 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E3310298A3A93CABB635E65 /* Pods-travel.networkUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D6QLX2WKT5;
@@ -521,6 +938,7 @@
 		};
 		3E926502213399D500DCFF00 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C4A2E9896F63B3B92A7FFEA /* Pods-travel.networkUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D6QLX2WKT5;
