@@ -8,7 +8,7 @@
 
 #import "JANetworkRequest.h"
 #import "JANetworkManager.h"
-#import "JADataParser.h"
+//#import "JADataParser.h"
 
 @implementation JANetworkRequest
 + (instancetype)shared {
@@ -34,7 +34,7 @@
     JANetworkManager *manager = [JANetworkManager defaultManager];
     NSString *urlPath = URLConfig[URLPath];
     NSString *urlString = [NSString stringWithFormat:@"%@%@",manager.baseURL.absoluteString,urlPath];
-    JALog(@"-------- URL --------\n%@\n----- Parameters -----\n%@\n-----------------------",urlString,[paramaters jsonPrettyStringEncoded]);
+//    JALog(@"-------- URL --------\n%@\n----- Parameters -----\n%@\n-----------------------",urlString,[paramaters jsonPrettyStringEncoded]);
 
     [self.delegate requestDidStart:URLConfig];
     switch (method) {
@@ -68,11 +68,6 @@
 }
 
 - (void)parserResponse:(id  _Nullable)responseObject withURLConfig:(NSDictionary *)URLConfig success:(HttpRequestSuccess)success {
-    ErrorModel *errorModel = [JADataParser getErrorInfoWithResponseObject:responseObject];
-    NSArray *modelArray = [JADataParser getModelArrayWithResponseObject:responseObject URLConfig:URLConfig];
-    success(errorModel, modelArray);
-    [self.delegate requestDidFinish:URLConfig json:responseObject];
-    JALog(@"------ Response ------\n%@",[responseObject jsonPrettyStringEncoded]);
 }
 
 + (NSURLSessionTask *)uploadFileWithURL:(NSString *)URL
@@ -89,14 +84,18 @@
         [formData appendPartWithFileURL:[NSURL URLWithString:filePath] name:name error:&error];
         !(failure && error) ?: failure(error);
     } progress:^(NSProgress * _Nonnull uploadProgress) {
-        dispatch_async_on_main_queue(^{
-            !progress ?: progress(uploadProgress);
-        });
+//        dispatch_get_main_queue()
+//        dispatch_get_main_queue(^{
+//
+//        });
+//        dispatch_get_main_queue(){
+//           !progress ?: progress(uploadProgress);
+//        });
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         ErrorModel *errorModel = [[ErrorModel alloc]init];
         errorModel.code = 0;
         !success ?: success(errorModel,responseObject);
-        JALog(@"uploadSuccess: %@",[responseObject jsonPrettyStringEncoded]);
+//        JALog(@"uploadSuccess: %@",[responseObject jsonPrettyStringEncoded]);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         !failure ?: failure(error);
         JALog(@"uploadError: %@",error);
@@ -104,52 +103,52 @@
     return sessionTask;
 }
 
-#pragma mark - 上传多张图片
-+ (NSURLSessionTask *)uploadImagesWithURL:(NSString *)URL
-                               parameters:(id)parameters
-                                     name:(NSString *)name
-                                   images:(NSArray<UIImage *> *)images
-                                fileNames:(NSArray<NSString *> *)fileNames
-                               imageScale:(CGFloat)imageScale
-                                imageType:(NSString *)imageType
-                                 progress:(HttpProgress)progress
-                                  success:(HttpRequestSuccess)success
-                                  failure:(HttpRequestFailure)failure {
-    
-    JANetworkManager *manager = [JANetworkManager defaultManager];
-    NSURLSessionTask *sessionTask = [manager POST:URL parameters:parameters constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
-        for (NSUInteger i = 0; i < images.count; i++) {
-            NSString *imageFileName = nil;
-            if (fileNames) {
-                imageFileName = [NSString stringWithFormat:@"%@.%@" ,fileNames[i] ,imageType ?: @"jpg"];
-            } else {
-                NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-                formatter.dateFormat = @"yyyy-MM-dd HH:mm:ss";
-                NSString *dateStr = [formatter stringFromDate:[NSDate date]];
-                imageFileName = [NSString stringWithFormat:@"%@%ld.%@", dateStr, i, imageType ?: @"jpg"];
-            }
-            NSData *imageData = UIImageJPEGRepresentation(images[i], imageScale ?: 1.f);
-            [formData appendPartWithFileData:imageData
-                                        name:name
-                                    fileName:imageFileName
-                                    mimeType:[NSString stringWithFormat:@"image/%@",imageType ?: @"jpg"]];
-        }
-    } progress:^(NSProgress * _Nonnull uploadProgress) {
-        dispatch_async_on_main_queue(^{
-            progress ? progress(uploadProgress) : nil;
-        });
-    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        ErrorModel *errorModel = [[ErrorModel alloc]init];
-        errorModel.code = 0;
-        success ? success(errorModel, responseObject) : nil;
-        JALog(@"uploadSuccess: %@",[responseObject jsonPrettyStringEncoded]);
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        failure ? failure(error) : nil;
-        JALog(@"uploadError: %@",error);
-    }];
-    
-    return sessionTask;
-}
+//#pragma mark - 上传多张图片
+//+ (NSURLSessionTask *)uploadImagesWithURL:(NSString *)URL
+//                               parameters:(id)parameters
+//                                     name:(NSString *)name
+//                                   images:(NSArray<UIImage *> *)images
+//                                fileNames:(NSArray<NSString *> *)fileNames
+//                               imageScale:(CGFloat)imageScale
+//                                imageType:(NSString *)imageType
+//                                 progress:(HttpProgress)progress
+//                                  success:(HttpRequestSuccess)success
+//                                  failure:(HttpRequestFailure)failure {
+//    
+//    JANetworkManager *manager = [JANetworkManager defaultManager];
+//    NSURLSessionTask *sessionTask = [manager POST:URL parameters:parameters constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
+//        for (NSUInteger i = 0; i < images.count; i++) {
+//            NSString *imageFileName = nil;
+//            if (fileNames) {
+//                imageFileName = [NSString stringWithFormat:@"%@.%@" ,fileNames[i] ,imageType ?: @"jpg"];
+//            } else {
+//                NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+//                formatter.dateFormat = @"yyyy-MM-dd HH:mm:ss";
+//                NSString *dateStr = [formatter stringFromDate:[NSDate date]];
+//                imageFileName = [NSString stringWithFormat:@"%@%ld.%@", dateStr, i, imageType ?: @"jpg"];
+//            }
+//            NSData *imageData = UIImageJPEGRepresentation(images[i], imageScale ?: 1.f);
+//            [formData appendPartWithFileData:imageData
+//                                        name:name
+//                                    fileName:imageFileName
+//                                    mimeType:[NSString stringWithFormat:@"image/%@",imageType ?: @"jpg"]];
+//        }
+//    } progress:^(NSProgress * _Nonnull uploadProgress) {
+//        dispatch_async_on_main_queue(^{
+//            progress ? progress(uploadProgress) : nil;
+//        });
+//    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+//        ErrorModel *errorModel = [[ErrorModel alloc]init];
+//        errorModel.code = 0;
+//        success ? success(errorModel, responseObject) : nil;
+//        JALog(@"uploadSuccess: %@",[responseObject jsonPrettyStringEncoded]);
+//    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+//        failure ? failure(error) : nil;
+//        JALog(@"uploadError: %@",error);
+//    }];
+//    
+//    return sessionTask;
+//}
 
 #pragma mark - 下载文件
 + (NSURLSessionTask *)downloadWithURL:(NSString *)URL
@@ -161,9 +160,9 @@
     JANetworkManager *manager = [JANetworkManager defaultManager];
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:URL]];
     NSURLSessionDownloadTask *downloadTask = [manager downloadTaskWithRequest:request progress:^(NSProgress * _Nonnull downloadProgress) {
-        dispatch_async_on_main_queue(^{
-            progress ? progress(downloadProgress) : nil;
-        });
+//        dispatch_async_on_main_queue(^{
+//            progress ? progress(downloadProgress) : nil;
+//        });
     } destination:^NSURL * _Nonnull(NSURL * _Nonnull targetPath, NSURLResponse * _Nonnull response) {
         NSString *downloadDir = [[NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:fileDir ? fileDir : @"Download"];
         NSFileManager *fileManager = [NSFileManager defaultManager];

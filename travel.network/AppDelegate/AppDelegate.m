@@ -21,12 +21,12 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [self initWindow];
-    if ([TNWLoginHelper isLogin]) {
+//    [self initWindow];
+//    if ([TNWLoginHelper isLogin]) {
         [self enterMainUI];
-    }else{
-        [self enterLoginUI];
-    }
+//    }else{
+//        [self enterLoginUI];
+//    }
     // Override point for customization after application launch.
     return YES;
 }

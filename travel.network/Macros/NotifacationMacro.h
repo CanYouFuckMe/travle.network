@@ -13,4 +13,6 @@
 #define NotifacationMacro_h
 
 
+//登录状态改变通知
+#define KNotificationLoginStateChange @"loginStateChange"
 #endif /* NotifacationMacro_h */

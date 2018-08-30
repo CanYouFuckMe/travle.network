@@ -39,7 +39,7 @@
 - (void)setTableView {
     UITableView *tableView = [[UITableView alloc]initWithFrame:CGRectZero style:self.tableViewStyle];
     self.tableView = tableView;
-    tableView.backgroundColor = kViewBackgroundColor;
+    tableView.backgroundColor = white_color;
     tableView.separatorInset = UIEdgeInsetsZero;
     tableView.dataSource = self;
     tableView.delegate = self;

@@ -19,11 +19,11 @@
 /** DEBUG LOG **/
 #ifdef DEBUG
 
-#define DLog( s, ... ) NSLog( @"< %@:(%d) > %@", [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__] )
+#define JALog( s, ... ) NSLog( @"< %@:(%d) > %@", [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__] )
 
 #else
 
-#define DLog( s, ... )
+#define JALog( s, ... )
 
 #endif
 
@@ -57,7 +57,9 @@
 // MainScreen Height&Width
 #define Main_Screen_Height      [[UIScreen mainScreen] bounds].size.height
 #define Main_Screen_Width       [[UIScreen mainScreen] bounds].size.width
-
+#define kScreenBounds       [UIScreen mainScreen].bounds
+#define kScreenWidth        kScreenBounds.size.width
+#define kScreenHeight       kScreenBounds.size.height
 
 #define kDelay  1.5
 #define delayRun dispatch_time(DISPATCH_TIME_NOW, (int64_t)(kDelay * NSEC_PER_SEC)), dispatch_get_main_queue()
@@ -186,7 +188,8 @@ NO)
 CGSizeEqualToSize(CGSizeMake(640, 960), \
 [[UIScreen mainScreen] currentMode].size) : \
 NO)
-
+#define TopHeight (MAX(SCREEN_WIDTH, SCREEN_HEIGHT)  == 812 ? 44 : 20)
+#define NAVH (MAX(SCREEN_WIDTH, SCREEN_HEIGHT)  == 812 ? 88 : 64)
 // 是否IOS7
 #define isIOS7                  ([[[UIDevice currentDevice]systemVersion]floatValue] >= 7.0)
 // 是否IOS6
@@ -372,6 +375,8 @@ description:__VA_ARGS__];\
 #define magenta_color   [UIColor magentaColor]
 
 #define kBackColor UIColorFromRGB(0xd81460)
+//主题颜色
+#define MM_MAIN_COLOR [UIColor colorWithRed:40/255.0 green:36/255.0 blue:33/255.0 alpha:255/255.0]
 
 /* ************************************************************************************************* */
 

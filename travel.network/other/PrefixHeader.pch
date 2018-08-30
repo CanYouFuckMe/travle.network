@@ -18,5 +18,6 @@
 #import "UtilsMarco.h"
 #import "VendorMarco.h"
 
+#import <Masonry.h>
 
 #endif /* PrefixHeader_pch */

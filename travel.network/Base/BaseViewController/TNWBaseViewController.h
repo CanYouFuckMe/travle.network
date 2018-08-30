@@ -17,7 +17,27 @@
 @property (nonatomic ,strong) UIView * viewBack;
 @property (nonatomic ,strong) UIButton * leftBtn ;
 @property (nonatomic ,strong) UIButton * rightBtn ;
+@property (strong, nonatomic) NSArray *dataArray;
 @property (nonatomic ,assign) BOOL hidden ;
+@property (strong, nonatomic) UIView *loadingView;
+@property (strong, nonatomic) UIView *noDataView;
+
+@property (assign, nonatomic) NSInteger pageIndex;
+@property (assign, nonatomic) NSInteger pageSize;
+@property (assign, nonatomic) NSInteger pageCount;
+
+@property (assign, nonatomic, getter = isNaviBarHidden) BOOL naviBarHidden;
+@property (assign, nonatomic, getter = isBackBtnHidden) BOOL backBtnHidden;
+@property (assign, nonatomic, getter = isRefreshHidden) BOOL refreshHidden;
+
+- (void)headerRefreshing;
+- (void)footerRefreshing;
+
+- (void)showLoadingView:(NSString *)loadingStr;
+- (void)hideLoadingView;
+
+- (void)showNoDataView;
+- (void)hideNoDataView;
 //创建ViewModel
 -(void)setupViewModel ;
 -(void)bindViewModel ;

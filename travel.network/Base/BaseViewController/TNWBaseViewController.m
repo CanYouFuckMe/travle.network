@@ -14,6 +14,23 @@
 
 @implementation TNWBaseViewController
 
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    return UIStatusBarStyleLightContent;
+}
+
+#pragma mark - LifeCycle
+
+- (instancetype)init {
+    if (self = [super init]) {
+        _pageIndex = 0;
+        _pageSize = 20;
+        _pageCount = 0;
+        _naviBarHidden = NO;
+        _backBtnHidden = NO;
+        _refreshHidden = NO;
+    }
+    return self;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationController.navigationBar.hidden = YES;
@@ -40,6 +57,24 @@
     [super didReceiveMemoryWarning];
 //    [[YYWebImageManager sharedManager].cache.memoryCache removeAllObjects];
     // Dispose of any resources that can be recreated.
+}
+#pragma mark - Setter & Getter
+
+- (UIView *)noDataView {
+    if (!_noDataView) {
+        _noDataView = [[UIView alloc]init];
+        UIImageView *noDataImageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@""]];
+        [_noDataView addSubview:noDataImageView];
+        noDataImageView.frame = self.view.frame;
+    }
+    return _noDataView;
+}
+
+- (void)setDataArray:(NSArray *)dataArray {
+    _dataArray = dataArray;
+    if (dataArray.count == 0) {
+        [self showNoDataView];
+    }
 }
 #pragma mark - 创建自定义导航栏
 -(void)setupNavTitleView{

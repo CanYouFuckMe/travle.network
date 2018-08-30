@@ -32,7 +32,7 @@
     UICollectionViewFlowLayout *flow = [[UICollectionViewFlowLayout alloc] init];
     UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:flow];
     self.collectionView = collectionView;
-    collectionView.backgroundColor = kViewBackgroundColor;
+    collectionView.backgroundColor = white_color;
     collectionView.delegate = self;
     
     MJRefreshNormalHeader *header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(headerRefresh)];

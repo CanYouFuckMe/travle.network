@@ -67,17 +67,17 @@ NS_ASSUME_NONNULL_BEGIN
                                 success:(HttpRequestSuccess)success
                                 failure:(HttpRequestFailure)failure;
 
-//上传多张图片
-+ (NSURLSessionTask *)uploadImagesWithURL:(NSString *)URL
-                               parameters:(id)parameters
-                                     name:(NSString *)name
-                                   images:(NSArray<UIImage *> *)images
-                                fileNames:(NSArray<NSString *> *)fileNames
-                               imageScale:(CGFloat)imageScale
-                                imageType:(NSString *)imageType
-                                 progress:(HttpProgress)progress
-                                  success:(HttpRequestSuccess)success
-                                  failure:(HttpRequestFailure)failure;
+////上传多张图片
+//+ (NSURLSessionTask *)uploadImagesWithURL:(NSString *)URL
+//                               parameters:(id)parameters
+//                                     name:(NSString *)name
+//                                   images:(NSArray<UIImage *> *)images
+//                                fileNames:(NSArray<NSString *> *)fileNames
+//                               imageScale:(CGFloat)imageScale
+//                                imageType:(NSString *)imageType
+//                                 progress:(HttpProgress)progress
+//                                  success:(HttpRequestSuccess)success
+//                                  failure:(HttpRequestFailure)failure;
 
 
 

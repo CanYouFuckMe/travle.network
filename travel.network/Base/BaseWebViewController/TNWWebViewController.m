@@ -30,7 +30,7 @@
 
 - (void)viewDidDisappear:(BOOL)animated {
     [super viewDidDisappear:animated];
-    [self.webView removeObserverBlocks];
+//    [self.webView removeObserverBlocks];
 }
 
 - (void)addWebViewWithUrl:(NSString *)url {
@@ -53,35 +53,35 @@
     self.progressView.transform = CGAffineTransformMakeScale(1.0, 2.0);
     [self.view addSubview:self.progressView];
     
-    kWeakSelf(self);
-    [self.webView addObserverBlockForKeyPath:@"estimatedProgress" block:^(id  _Nonnull obj, id  _Nullable oldVal, id  _Nullable newVal) {
-        kStrongSelf(self);
-        float progress = [newVal floatValue];
-        if (progress > self.progressView.progress) {
-            [self.progressView setProgress:[newVal doubleValue] animated:YES];
-        } else {
-            self.progressView.progress = progress;
-        }
-        
-        if (progress == 1.0) {
-            dispatch_queue_t hudQue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
-            dispatch_time_t time = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.35 * NSEC_PER_SEC));
-            dispatch_after(time, hudQue, ^{
-                dispatch_async(dispatch_get_main_queue(), ^{
-                    self.progressView.hidden = YES;
-                });
-            });
-        } else {
-            self.progressView.hidden = NO;
-        }
-        //        weakSelf.progressView.hidden = progress == 1.0 ? YES : NO;
-    }];
-    
-    self.navigationItem.title = self.webView.title;
-    [self.webView addObserverBlockForKeyPath:@"title" block:^(id  _Nonnull obj, id  _Nullable oldVal, id  _Nullable newVal) {
-        kStrongSelf(self);
-        self.navigationItem.title = newVal;
-    }];
+//    kWeakSelf(self);
+//    [self.webView addObserverBlockForKeyPath:@"estimatedProgress" block:^(id  _Nonnull obj, id  _Nullable oldVal, id  _Nullable newVal) {
+//        kStrongSelf(self);
+//        float progress = [newVal floatValue];
+//        if (progress > self.progressView.progress) {
+//            [self.progressView setProgress:[newVal doubleValue] animated:YES];
+//        } else {
+//            self.progressView.progress = progress;
+//        }
+//        
+//        if (progress == 1.0) {
+//            dispatch_queue_t hudQue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+//            dispatch_time_t time = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.35 * NSEC_PER_SEC));
+//            dispatch_after(time, hudQue, ^{
+//                dispatch_async(dispatch_get_main_queue(), ^{
+//                    self.progressView.hidden = YES;
+//                });
+//            });
+//        } else {
+//            self.progressView.hidden = NO;
+//        }
+//        //        weakSelf.progressView.hidden = progress == 1.0 ? YES : NO;
+//    }];
+//    
+//    self.navigationItem.title = self.webView.title;
+//    [self.webView addObserverBlockForKeyPath:@"title" block:^(id  _Nonnull obj, id  _Nullable oldVal, id  _Nullable newVal) {
+//        kStrongSelf(self);
+//        self.navigationItem.title = newVal;
+//    }];
 }
 
 #pragma mark - WKNavigationDelegate

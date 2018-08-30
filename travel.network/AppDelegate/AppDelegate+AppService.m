@@ -10,6 +10,7 @@
 #import "TNWLoginHelper.h"
 #import "TNWLoginViewController.h"
 #import "TNWViewController.h"
+#import <AFNetworking.h>
 
 @implementation AppDelegate (AppService)
 
@@ -30,6 +31,7 @@
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     TNWViewController  *tabBarVC= [[TNWViewController alloc]init];
     self.window.rootViewController = tabBarVC;
+    self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
 }
 - (void)monitorNetworkStatus {
