@@ -8,6 +8,8 @@
 
 #import "AppDelegate+AppService.h"
 #import "TNWLoginHelper.h"
+#import "TNWLoginViewController.h"
+#import "TNWViewController.h"
 
 @implementation AppDelegate (AppService)
 
@@ -16,9 +18,9 @@
         [TNWLoginHelper removeSavedLoginInfo];
         //        移除认证步骤
     }
-    if ([self.window.rootViewController isKindOfClass:[MMLoginViewController class]]) {return ;}
+    if ([self.window.rootViewController isKindOfClass:[TNWLoginViewController class]]) {return ;}
     
-    MMLoginViewController * vc = [[MMLoginViewController alloc] init];
+    TNWLoginViewController * vc = [[TNWLoginViewController alloc] init];
     //    XJBaseNavgationController *navi = [[XJBaseNavgationController alloc] initWithRootViewController:vc];
     self.window.rootViewController = vc;
     //    [self.window addSubview:vc.view];
@@ -26,7 +28,7 @@
 }
 -(void)enterMainUI{
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
-    MMTabbarViewController  *tabBarVC= [[MMTabbarViewController alloc]init];
+    TNWViewController  *tabBarVC= [[TNWViewController alloc]init];
     self.window.rootViewController = tabBarVC;
     [self.window makeKeyAndVisible];
 }

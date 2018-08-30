@@ -7,6 +7,11 @@
 //
 
 #import "AppDelegate.h"
+#import "TNWLoginHelper.h"
+#import "TNWNavigationController.h"
+#import "TNWLoginViewController.h"
+#import "TNWViewController.h"
+#import "AppDelegate+AppService.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +22,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [self initWindow];
+    if ([TNWLoginHelper isLogin]) {
+        [self enterMainUI];
+    }else{
+        [self enterLoginUI];
+    }
     // Override point for customization after application launch.
     return YES;
 }

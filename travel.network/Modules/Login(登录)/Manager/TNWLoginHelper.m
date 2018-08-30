@@ -9,6 +9,7 @@
 #import "TNWLoginHelper.h"
 #import "AppDelegate.h"
 #import "TNWLoginModel.h"
+#import "AppDelegate+AppService.h"
 
 static NSString *const JMUserArchiverFileName = @"XJUserArchiverFileName.arch";
 static NSString *const JMUserFileName = @"XJUserFileName";
@@ -27,7 +28,7 @@ static NSString *const XJUserArchiverAdressFileName = @"XJUserArchiverAdressFile
     AppDelegate *app = (AppDelegate *)[UIApplication sharedApplication].delegate;
     [app enterMainUI];
 }
-+(nullable HRLoginModel *)saveLoginInfo{
++(nullable TNWLoginModel *)saveLoginInfo{
     NSString *path = [self pathForName:JMUserArchiverFileName];
     id obj = [NSKeyedUnarchiver unarchiveObjectWithFile:path];
     if ([obj isKindOfClass:[TNWLoginModel class]]) {
